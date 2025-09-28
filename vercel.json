@@ -1,0 +1,33 @@
+{
+  "buildCommand": "echo 'No build required'",
+  "outputDirectory": ".",
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/src/index.html"
+    },
+    {
+      "src": "/styles.css",
+      "dest": "/src/styles.css"
+    },
+    {
+      "src": "/app.js",
+      "dest": "/src/app.js"
+    },
+    {
+      "src": "/service-worker.js",
+      "dest": "/src/service-worker.js"
+    },
+    {
+      "src": "/manifest.json",
+      "dest": "/public/manifest.json"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ],
+  "env": {
+    "GROQ_API_KEY": "@groq_api_key"
+  }
+}

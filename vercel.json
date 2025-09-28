@@ -4,26 +4,27 @@
   "routes": [
     {
       "src": "/",
-      "dest": "/src/index.html"
+      "dest": "/index.html"
     },
     {
       "src": "/styles.css",
-      "dest": "/src/styles.css"
+      "dest": "/styles.css"
     },
     {
       "src": "/app.js",
-      "dest": "/src/app.js"
+      "dest": "/app.js"
     },
     {
       "src": "/service-worker.js",
-      "dest": "/src/service-worker.js"
+      "dest": "/service-worker.js"
     },
     {
       "src": "/manifest.json",
-      "dest": "/public/manifest.json"
+      "dest": "/manifest.json"
     },
     {
       "src": "/api/(.*)",
       "dest": "/api/$1"
     }
-  
+  ]
+}
